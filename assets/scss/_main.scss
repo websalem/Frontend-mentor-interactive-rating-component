@@ -1,0 +1,132 @@
+main {
+    background-color: $dark-blue;
+    color: $light-grey;
+    font-family: $font-family;
+    line-height: 1.5;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.rating-state.hidden,
+.thank-you-state.hidden {
+    display: none;
+}
+
+.thank-you-state {
+    display: block;
+}
+
+.rating-state .star {
+    width: 40px;
+    height: 40px;
+    background-color: hsl(214, 16%, 26%);
+    padding: 7px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.star img {
+    max-width: 15px;
+
+}
+
+.rating-state h1 {
+    color: $white;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.rating-state p {
+    margin-bottom: 2rem;
+
+}
+
+.rating-nums {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.rating-nums>div {
+    width: 40px;
+    height: 40px;
+    background-color: hsl(214, 16%, 26%);
+    border-radius: 50%;
+    font-size: .85rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-nums>div:hover {
+    background-color: $orange;
+    color: $white;
+}
+
+.rating-nums>div.clicked {
+    background-color: $light-grey;
+    color: $white;
+}
+
+button {
+    width: 100%;
+    background-color: $orange;
+    color: $white;
+    appearance: none;
+    border-radius: 20px;
+    border: none;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $white;
+    color: $orange;
+}
+
+.thank-you-img {
+    text-align: center;
+    padding: 1rem;
+}
+
+.thank-you-img img {
+    display: inline;
+}
+
+.thank-you-rating {
+    background-color: hsl(214, 14%, 20%);
+    border-radius: 30px;
+    color: $orange;
+    padding: .5rem 1rem;
+    text-align: center;
+    width: fit-content;
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+.thank-you-state h1 {
+    color: $white;
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.thank-you-state p {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 400px;
+    }
+}
